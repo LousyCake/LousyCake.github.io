@@ -22,8 +22,8 @@ var isMobile = {
 
 
 
-let charaters = ["A", "N", "S", "H", "U", "L", "S", "H", "U","K","L","A"];
-let count = 9;
+let charaters = ["A", "N", "S", "H", "U", "L"];
+let count = 6;
 let pluckers = [];
 let pitch = (isMobile.any())? 90 : 60;
 let cHeight;
