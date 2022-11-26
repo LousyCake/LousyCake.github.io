@@ -1,0 +1,232 @@
+<html lang="en">
+
+<head>
+    <title>Anshul Shukla</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
+        rel="stylesheet">
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/5ec57f8a93.js" crossorigin="anonymous"></script>
+    <script src="Scripts/p5.min.js"></script>
+    <Script src="Scripts/sketch.js"></Script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+
+        <!-- Navigation Menu -->
+        <ul>
+            <li class="logo logo-animated top" id="logo">
+                <div class="text">
+                    Anshul Shukla
+                </div>
+            </li>
+            <li class="button"><a href="#about">About</a></li>
+            <li class="button"><a href="#submissions">Submissions</a></li>
+            <li class="button"><a href="#projects">Projects</a></li>
+            <li class="button"> <a href="#contact">Contact me</a></li>
+            <li class="ham"><a><i class="fas fa-bars"></i></a></li>
+        </ul>
+
+
+    </nav>
+
+
+    <div class="banner" id="banner">
+
+
+
+    </div>
+    <div class="container">
+        <div id="about">
+            <div class="content-heading">
+                About
+            </div>
+            <div class="content-filler">
+                <p>
+                    Welcome to <span class="imp">my portfolio website</span>, a showcase of work by the <span
+                        class="imp">Anshul Shukla </span> of IIPS, DAVV ,Indore.
+                </p>
+                <p>
+                    Indian by birth. Passionate Video editor, VFX artist and Tech Enthusiast by choice. Hi! I am Anshul
+                    Shukla, a
+                    resident of Indore, India. I am profoundly interested in learning new concepts and helping
+                    bring brainstorming ideas to life. I specialize in VFX, video editing and content creation.
+                </p>
+
+            </div>
+        </div>
+
+
+        <div id="submissions">
+            <div class="content-heading">
+                Submissions
+            </div>
+            <div class="info-container">
+                <div>
+                    <div class="heading">
+                        <a href="submissions.html">
+                            <img src="Images/Submissions.png" />
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="projects">
+            <div class="content-heading">
+                Projects
+            </div>
+            <div class="info-container">
+                <div>
+                    <div class="heading">
+                        <a href="projects.html">
+                            <img src="Images/Project.png" />
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+        <div id="contact">
+            <div class="content-heading">
+                Contact Links
+            </div>
+            <div class="artist-container">
+                <div class="artist-item">
+                    <div class="artist-img">
+                        <img src="Images/Artists/artists_AnshulShukla.jpeg">
+
+                    </div>
+                    <div class="artist-description">
+                        <div class="artist-header"></div>
+                        <ul class="social">
+                            <li>
+                                <a href="https://lousycake.github.io/" target="_blank">
+                                    <i class="fa-brands fa-chrome"></i>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="https://ayyshush.itch.io/" target="_blank">
+                                    <i class="fab fa-itch-io"></i>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/ayyshush/" target="_blank">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/AyyShush" target="_blank">
+                                    <i class="fa-brands fa-github-square"></i>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/Ayyshush" target="_blank">
+                                    <i class="fa-brands fa-twitter-square"></i>
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        Copyright © Anshul Shukla 2022
+        <br>
+    </footer>
+
+</body>
+<script>
+    $(document).on('click', 'a[href^="#"]', function (e) {
+        console.log("overriding scrolling");
+        // target element id
+        var id = $(this).attr('href');
+        var navbar = $("#navbar");
+        console.log(navbar);
+        // target element
+        var $id = $(id);
+        if ($id.length === 0) {
+            return;
+        }
+
+        // prevent standard hash navigation (avoid blinking in IE)
+        e.preventDefault();
+
+        // top position relative to the document
+        var pos = $id.offset().top - navbar.outerHeight();
+        console.log(pos);
+
+        // animated top scrolling
+        $('body, html').animate({ scrollTop: pos });
+    });
+
+    $(document).ready(function () {
+        $('.ham').click(function () {
+            $('.button').toggleClass("show");
+            $('ul li').toggleClass("hide");
+        });
+
+    });
+
+    $.fn.isInViewport = function (offsetElement) {
+        var elementTop = $(this).offset().top;
+        var elementBottom = elementTop + $(this).outerHeight();
+
+        var viewportTop = $(window).scrollTop() + $("#navbar").outerHeight();
+        var viewportBottom = viewportTop + $(window).height();
+
+        return elementBottom > viewportTop && elementTop < viewportBottom;
+    };
+
+    $(document).scroll(function () {
+
+        if ($("#banner").isInViewport()) {
+            $("#navbar").removeClass("fixed");
+            $("#logo").addClass("top");
+
+        } else if (!$("#banner").isInViewport()) {
+            $("#navbar").addClass("fixed");
+            $("#logo").removeClass("top");
+        }
+    });
+
+
+</script>
+
+</html>
