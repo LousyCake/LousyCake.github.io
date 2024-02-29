@@ -463,3 +463,14 @@ footer span{
 #p5_loading{
     display:none;
 }
+
+.games-item a img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Adjust as needed */
+    transition: transform 0.3s ease-in-out;
+}
+
+.games-item a:hover img {
+    transform: scale(1.1);
+}
