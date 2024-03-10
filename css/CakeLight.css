@@ -1,0 +1,171 @@
+body.light-mode {
+    background-color: #F7F5EE;
+    color: #181818;
+    overflow-x: hidden;
+    cursor: none;
+}
+
+a {
+    cursor: none !important;
+}
+
+
+body.light-mode::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+body.light-mode::-webkit-scrollbar-track {
+    background-color: #F7F5EE;
+    border-radius: 10px;
+}
+
+
+body.light-mode::-webkit-scrollbar-thumb {
+    background-color: #C5681C;
+    border-radius: 10px;
+}
+
+body.light-mode::-webkit-scrollbar-thumb:hover {
+    background-color: #E58326;
+}
+
+.light-mode .logo {
+    color: #C5681C;
+}
+
+.light-mode .logo span {
+    color: #7D6350;
+}
+
+.light-mode .lous-text h2 {
+    color: #C5681C;
+}
+
+.light-mode .lous-text h1 {
+    color: #7D6350;
+}
+
+.light-mode .about-link {
+    color: #C5681C;
+}
+
+.light-mode .about-link:hover {
+    background-color: #2A2A2A;
+}
+
+
+.light-mode .university-link {
+    color: #C5681C;;
+}
+  
+.light-mode .university-link:hover {
+    background-color: #2A2A2A;
+}
+
+.light-mode .ShowCase h2 {
+    color: #7D6350;
+}
+
+.light-mode .ShowCase h2 .d-letter {
+    color: #C5681C;
+}
+
+.light-mode .ShowCase h2 .o-letter {
+    color: #C5681C;
+}
+
+.light-mode .ShowCase p {
+    color: #7D6350;
+}
+
+.light-mode .BehanceLink {
+    color: #52433E;
+}
+
+.light-mode .BehanceLink:hover {
+    color: #C5681C;
+}
+
+.light-mode .cursor {
+    background-color: #87CEEB;
+}
+
+.light-mode .section-container {
+    border: 1px solid #000;
+    background-color: #F7F5EE;
+    color: #000;
+}
+
+.light-mode .certificate img,
+.light-mode .achievement i,
+.light-mode .blog i,
+.light-mode .service i {
+    color: #007BFF;
+}
+
+.light-mode .service i {
+    color: #FF0000;
+}
+
+.light-mode .certificate p,
+.light-mode .achievement p,
+.light-mode .blog a,
+.light-mode .service p {
+    color: #000;
+}
+
+.light-mode .certificate a,
+.light-mode .service a {
+    color: #C5681C;
+    background-color: #1A1A1A;
+}
+
+.light-mode .certificate a:hover,
+.light-mode .service a:hover {
+    color: #C5681C;
+    background-color: #2A2A2A;
+}
+
+/* Blog Section Styles */
+.light-mode .blog-section {
+    background-color: #F7F5EE;
+}
+
+.light-mode .blog i {
+    color: #007BFF;
+}
+
+.light-mode .blog a {
+    color: #000;
+}
+
+.light-mode .blog a:hover {
+    color: #C5681C;
+}
+
+.light-mode .about-link,
+.light-mode .certificate a,
+.light-mode .service a {
+    color: #C5681C;
+}
+
+.light-mode .Portfolio h2 {
+    border-bottom: 2px solid #000;
+}
+
+.light-mode .service p {
+    color: #1A1A1A;
+}
+
+.light-mode .service p {
+    color: #1A1A1A;
+}
+
+.light-mode .section-heading {
+    color: #7D6350;
+}
+
+.light-mode .section-heading span {
+    color: #C5681C;
+}

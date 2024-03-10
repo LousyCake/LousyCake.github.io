@@ -1,0 +1,355 @@
+body {
+    margin: 0;
+    background-color: #0f0f0f;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    color: white;
+    cursor: none;
+    padding: 20px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+a {
+    cursor: none !important;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Font-Face */
+@font-face {
+    font-family: 'Marlide Display_Reg';
+    src: url('../Fonts/MarlideDisplay_Regular.woff2') format('woff2'), /* Regular */
+         url('../Fonts/MarlideDisplay_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Marlide Display_light';
+    src: url('../Fonts/MarlideDisplay_Light.woff2') format('woff2'), /* Light */
+         url('../Fonts/MarlideDisplay_Light.woff') format('woff');
+    font-weight: 300; /* Specify the font weight (300 for light) */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Marlide Display_bold';
+    src: url('../Fonts/MarlideDisplay_Bold.woff2') format('woff2'), /* Bold */
+         url('../Fonts/MarlideDisplay_Bold.woff') format('woff');
+    font-weight: bold; /* Specify the font weight (bold) */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Zina';
+    src: url(../Fonts/Zina-Regular.woff), url(../Fonts/Zina-Regular.woff2);
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'BeSpoke';
+    src: url(../Fonts/BespokeStencil-Bold.woff), url(../Fonts/BespokeStencil-Bold.woff2);
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Getai';
+    src: url(../Fonts/DTGetaiGroteskDisplay-Black.woff), url(../Fonts/DTGetaiGroteskDisplay-Black.woff2);
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Afro';
+    src: url(../Fonts/AfronautTest-Regular.woff), url(../Fonts/AfronautTest-Regular.woff2);
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Helvetica';
+    src: url('../Fonts/HelveticaNowDisplay-Regular.woff2') format('woff2'), /* Regular */
+         url('../Fonts/HelveticaNowDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color: #00FFFF;
+    border-radius: 70%;
+    mix-blend-mode: difference;
+}
+
+.close-button {
+    text-decoration: none;
+    color: #C7EFCF;
+    font-size: 17px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #1A1A1A;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    font-family: 'Afro';
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.close-button:hover {
+    background-color: #2A2A2A;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.curved-container {
+    width: 300px;
+    height: 830px;
+    border-radius: 24px;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    /* Center text inside container */
+    border: 1px solid #000000;
+    /* 1px solid border, adjust color as needed */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow */
+}
+
+.main-heading {
+    font-size: 38px;
+    color: #C7EFCF;
+    font-family: Afro;
+    margin-bottom: 20px;
+    text-align: left;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    /* Adjust this value for testing */
+}
+
+/* Left button styling */
+.left-button {
+    position: absolute;
+    top: 140px;
+    left: 40px;
+    background-color: #4B4A4C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+    cursor: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow */
+}
+
+/* Right button styling */
+.right-button {
+    position: absolute;
+    top: 140px;
+    right: 195px;
+    background-color: #212022;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+    cursor: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow */
+}
+
+/* Hover effect */
+.round-button:hover {
+    filter: brightness(90%);
+}
+
+.bar-container {
+    width: 290px;
+    /* Adjust the width based on your design */
+    height: 310px;
+    border-radius: 16px;
+    position: absolute;
+    left: 50%;
+    /* Adjust the horizontal position */
+    transform: translateX(-50%);
+    bottom: 330px;
+    border: 1px solid #000000;
+    /* 1px solid border, adjust color as needed */
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    overflow: hidden;
+    /* To ensure the curved borders are visible */
+    /* Set initial opacity for smooth transition */
+    opacity: 1;
+    /* Add transition property for fade */
+    transition: opacity 0.5s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow */
+}
+
+.progress-bar {
+    width: 20px;
+    /* Adjust the width of the bars */
+    background: linear-gradient(to bottom, #DA0611, #0F0F0F);
+    /* Dark gradient background */
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    /* Curved borders */
+    overflow: hidden;
+    /* To ensure the curved borders are visible */
+    display: flex;
+    flex-direction: column-reverse;
+    /* Align text from bottom to top */
+    align-items: center;
+    /* Align text in the center horizontally */
+    margin-bottom: 5px;
+    /* Adjust the space between bars */
+}
+
+.progress-text {
+    font-family: 'Getai';
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    white-space: nowrap;
+    background: linear-gradient(135deg, #18FBD2, #FF8C00, #FF19DF, #0B72A7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.so-container {
+    width: 290px;
+    height: 310px;
+    border-radius: 16px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 330px;
+    border: 1px solid #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  /* Center children vertically */
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow */
+}
+
+.software-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  /* Center text vertically */
+    padding: 20px;
+}
+
+.software-text {
+    font-size: 18px;
+    font-family: 'Getai';
+    margin: 8px 0;
+    background: linear-gradient(135deg, #FA02AA, #FF66B2, #ADB0F5, #65D3FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.curved-image {
+    width: 290px;
+    /* Adjust the width based on your design */
+    height: 290px;
+    /* Maintain a 1:1 aspect ratio */
+    border-radius: 16px;
+    position: absolute;
+    left: 50%;
+    /* Adjust the horizontal position */
+    transform: translateX(-50%);
+    bottom: 20px;
+    /* Leave a 20px gap from the bottom */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow */
+}
+
+.praise-corner {
+    width: 300px; /* Adjust the width to match the curved-container */
+    height: 770px;
+    border-radius: 24px;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 53%;
+    right: 20px;
+    transform: translateY(-50%);
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    /* Center text inside container */
+    border: 1px solid #000000;
+    /* 1px solid border, adjust color as needed */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow */
+    animation: moveUpDown 20s linear infinite;
+}
+
+.praise-heading {
+    font-size: 24px;
+    color: #C7EFCF;
+    font-family: Afro;
+    margin-bottom: 20px;
+}
+
+.praise-content {
+    text-align: left;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+}
+
+blockquote {
+    font-family: 'Afro';
+    font-size: 16px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.testimonial-author {
+    font-family: 'Afro';
+    font-size: 14px;
+    color: #FF72EF;
+    margin: 0;
+}
+
+.so-container.active,
+.bar-container.active {
+    display: flex;
+}
+
+.so-container:not(.active),
+.bar-container:not(.active) {
+    display: none;
+}
