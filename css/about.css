@@ -39,7 +39,7 @@ body::-webkit-scrollbar-thumb:hover {
     font-family: 'Marlide Display_light';
     src: url('../Fonts/MarlideDisplay_Light.woff2') format('woff2'), /* Light */
          url('../Fonts/MarlideDisplay_Light.woff') format('woff');
-    font-weight: 300; /* Specify the font weight (300 for light) */
+    font-weight: 300; 
     font-style: normal;
   }
   
@@ -47,7 +47,7 @@ body::-webkit-scrollbar-thumb:hover {
     font-family: 'Marlide Display_bold';
     src: url('../Fonts/MarlideDisplay_Bold.woff2') format('woff2'), /* Bold */
          url('../Fonts/MarlideDisplay_Bold.woff') format('woff');
-    font-weight: bold; /* Specify the font weight (bold) */
+    font-weight: bold; 
     font-style: normal;
   }
   
@@ -81,7 +81,7 @@ body::-webkit-scrollbar-thumb:hover {
   
   @font-face {
     font-family: 'Helvetica';
-    src: url('../Fonts/HelveticaNowDisplay-Regular.woff2') format('woff2'), /* Regular */
+    src: url('../Fonts/HelveticaNowDisplay-Regular.woff2') format('woff2'),
          url('../Fonts/HelveticaNowDisplay-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
@@ -127,10 +127,8 @@ body::-webkit-scrollbar-thumb:hover {
     overflow: hidden;
     padding: 20px;
     text-align: center;
-    /* Center text inside container */
     border: 1px solid #000000;
-    /* 1px solid border, adjust color as needed */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
 }
 
 .main-heading {
@@ -142,10 +140,8 @@ body::-webkit-scrollbar-thumb:hover {
     position: absolute;
     top: 10px;
     left: 40px;
-    /* Adjust this value for testing */
 }
 
-/* Left button styling */
 .left-button {
     position: absolute;
     top: 140px;
@@ -162,10 +158,9 @@ body::-webkit-scrollbar-thumb:hover {
     transition: background-color 0.3s ease;
     z-index: 1;
     cursor: none;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-/* Right button styling */
 .right-button {
     position: absolute;
     top: 140px;
@@ -182,55 +177,41 @@ body::-webkit-scrollbar-thumb:hover {
     transition: background-color 0.3s ease;
     z-index: 1;
     cursor: none;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
 }
 
-/* Hover effect */
 .round-button:hover {
     filter: brightness(90%);
 }
 
 .bar-container {
     width: 290px;
-    /* Adjust the width based on your design */
     height: 310px;
     border-radius: 16px;
     position: absolute;
     left: 50%;
-    /* Adjust the horizontal position */
     transform: translateX(-50%);
     bottom: 330px;
     border: 1px solid #000000;
-    /* 1px solid border, adjust color as needed */
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
     overflow: hidden;
-    /* To ensure the curved borders are visible */
-    /* Set initial opacity for smooth transition */
     opacity: 1;
-    /* Add transition property for fade */
     transition: opacity 0.5s ease;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
 }
 
 .progress-bar {
     width: 20px;
-    /* Adjust the width of the bars */
     background: linear-gradient(to bottom, #DA0611, #0F0F0F);
-    /* Dark gradient background */
     text-align: center;
     border-radius: 10px 10px 0 0;
-    /* Curved borders */
     overflow: hidden;
-    /* To ensure the curved borders are visible */
     display: flex;
     flex-direction: column-reverse;
-    /* Align text from bottom to top */
     align-items: center;
-    /* Align text in the center horizontally */
     margin-bottom: 5px;
-    /* Adjust the space between bars */
 }
 
 .progress-text {
@@ -256,18 +237,18 @@ body::-webkit-scrollbar-thumb:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;  /* Center children vertically */
+    justify-content: center;
     overflow: hidden;
     opacity: 1;
     transition: opacity 0.5s ease;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .software-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;  /* Center text vertically */
+    justify-content: center;
     padding: 20px;
 }
 
@@ -283,21 +264,17 @@ body::-webkit-scrollbar-thumb:hover {
 
 .curved-image {
     width: 290px;
-    /* Adjust the width based on your design */
     height: 290px;
-    /* Maintain a 1:1 aspect ratio */
     border-radius: 16px;
     position: absolute;
     left: 50%;
-    /* Adjust the horizontal position */
     transform: translateX(-50%);
     bottom: 20px;
-    /* Leave a 20px gap from the bottom */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .praise-corner {
-    width: 300px; /* Adjust the width to match the curved-container */
+    width: 300px;
     height: 770px;
     border-radius: 24px;
     backdrop-filter: blur(10px);
@@ -308,10 +285,8 @@ body::-webkit-scrollbar-thumb:hover {
     overflow: hidden;
     padding: 20px;
     text-align: center;
-    /* Center text inside container */
     border: 1px solid #000000;
-    /* 1px solid border, adjust color as needed */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
     animation: moveUpDown 20s linear infinite;
 }
 
@@ -331,17 +306,17 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 blockquote {
-    font-family: 'Afro';
     font-size: 16px;
     color: white;
     margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .testimonial-author {
-    font-family: 'Afro';
     font-size: 14px;
     color: #FF72EF;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .so-container.active,
