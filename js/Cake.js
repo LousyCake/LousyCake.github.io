@@ -13,8 +13,6 @@ $(document).ready(function () {
             $('#theme-toggle-button .sun-icon').show();
         }
 
-
-
         // Toggle the CSS file for the theme
         const cssLink = $('#theme-stylesheet');
         if (cssLink.attr('href') === 'Cake.css') {
